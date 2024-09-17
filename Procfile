@@ -1,2 +1,3 @@
-web: node proyecto_impulso/backend/server.js
+web: cd proyecto_impulso/backend && npm install && node server.js
+
 
