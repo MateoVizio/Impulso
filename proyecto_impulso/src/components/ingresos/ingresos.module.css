@@ -1,0 +1,313 @@
+/* Global Styles */
+* {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.fullContainer {
+    background-color: rgb(213, 213, 213);
+    padding-top: 100px;
+    padding-bottom: 158px;
+}
+
+
+
+.container {
+    display: flex;
+    width: calc(100% - 40px); /* Ajusta el ancho total menos el espacio que quieras a ambos lados */
+    justify-content: center;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-top: 30px;
+    margin-left: 90px;
+    padding-left: 50px;
+    padding-right: 50px; /* Cambia este valor según necesites espacio a la derecha */
+    padding-bottom: 30px;
+    background-color: rgb(182, 182, 182);
+    max-width: 700px;
+}
+
+.formContainer {
+    max-width: 50%;
+    height: 341px;
+}
+
+.input, .select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.activo{
+    background-color: #00171F;
+  color: white !important;
+  border: 0px solid #ccc;
+  padding: 4px 6px;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  margin-right: 2px;
+  margin-left: 5px;
+  margin: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  min-width: 25px;
+  max-width: 25px;
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button2 {
+    padding: 5px 7.5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.button3 {
+    padding: 2px 7px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+
+.info{
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.carritoContainer {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    min-width: 400px;
+}
+
+.carrito {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    min-width: 50%;
+}
+
+.container ul {
+    min-height: 200px;
+}
+
+.carritoLista {
+    list-style-type: none;
+    padding: 0;
+    display: block;
+    font-size: 12px;
+    overflow-y: auto;
+    max-height:200px;
+}
+
+.carritoLista button {
+    font-size: 12px;
+}
+
+.itemCarrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    color: black; /* Color del texto de los productos en el carrito */
+}
+
+.productoNombre {
+    flex: 1;
+}
+
+.productoCantidad {
+    margin: 0 10px;
+}
+
+.productoPrecio {
+    margin: 0 10px;
+}
+
+.eliminarButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.eliminarButton:hover {
+    background-color: #c82333;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    font-size: 12px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.contenedorCliente {
+    display: flex;
+}
+
+.contenedorProducto {
+    display: flex;
+    margin-bottom: -9px;
+}
+
+form {
+    border-radius: 10px;
+    border: solid 2px;
+}
+
+.subtitulo{
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+/* Overlay Styles for Ventas */
+.ventasOverlay {
+    position: fixed; /* Se queda en la misma posición mientras se desplaza la página */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ocupa el ancho completo de la ventana */
+    height: 100vh; /* Ocupa el alto completo de la ventana */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.ventasContainer {
+    background-color: #ffffff; /* Fondo blanco para el contenedor de ventas */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+    min-width: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.contenedorVentas{
+    text-align: left;
+}
+
+.closeButton {
+    background: #f44336; /* Rojo para el botón de cerrar */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    width: 20px;
+    font-size: 14px;
+    padding-bottom: 22px;
+}
+
+.closeButton:hover {
+    background: #d32f2f; /* Color más oscuro al pasar el cursor */
+}
+.contenedorFiltradoDiaMes{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 5px;
+}
+
+.contenedorFiltradoDiaMes input{
+    border-color: #0056b3;
+    
+}
+
+/* Styles for Ventas List */
+.ventasLista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    display: block;
+    overflow-y: auto;
+    max-height: 550px;
+    min-height: 550px;
+}
+
+.ventaItem {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.ventaItem strong{
+    font-weight: 600;
+}
+
+.historialVentasContainer {
+    margin-top: 20px;
+}
+
+/* Styles for the table in the historialVentasContainer */
+.historialVentasTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.historialVentasTable th,
+.historialVentasTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.historialVentasTable th {
+    background-color: #f4f4f4;
+    text-align: left;
+}

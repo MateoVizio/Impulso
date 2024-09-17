@@ -1,0 +1,91 @@
+.contenedorMembresias {
+    background-color: rgb(182, 182, 182);
+    padding-top: 15px;  
+    min-height: 92.3vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .botonesFiltro {
+    margin-bottom: 15px;
+  }
+  
+  .boton {
+    background-color: white;
+    color: black;
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .botonNotificar{
+    background-color: #007bff;
+  color: white !important;
+  padding: 4px 6px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  margin-right: 2px;
+  margin-left: 5px;
+  margin: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  }
+  
+  .boton.active {
+    background-color: #00171F; /* Cambia el color de fondo del botón activo */
+    color: white; /* Cambia el color del texto del botón activo */
+  }
+  
+  .contenedorListaClientes {
+    background-color: #fbfeff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 97%;
+    display: block;
+    justify-content: center;
+    min-height: 450px;
+  }
+  
+  .tablaClientes {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    outline: 2px solid white;
+    
+  }
+  
+  .tablaClientes th, .tablaClientes td {
+    border: 2px solid #ddd;
+    padding: 8px;
+  }
+  
+  .tablaClientes th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #00171F;
+    color: white;
+    text-align: center;
+  }
+  
+  .tablaClientes td {
+    color: rgb(0, 0, 0);
+  }
+  
+  .paginacion{
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+  }
