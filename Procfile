@@ -1,1 +1,2 @@
-web: cd proyecto_impulso/backend && node server.js
+web: node proyecto_impulso/backend/server.js
+
